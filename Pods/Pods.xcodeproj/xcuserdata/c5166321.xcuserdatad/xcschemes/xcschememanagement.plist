@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-WiseFly.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Shimmer.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Tweaks.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>pop.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>788E2B6A49762A157338EA58973D4426</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8172C413C7FAFF3F20933F7BF2390E12</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D310AF826680E1535FD331CC2E42080D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E612EFC367FE205EA7BF88C1B8CF2CFA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="WiseFly" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="1-loading.png" translatesAutoresizingMaskIntoConstraints="NO" id="bP7-Bq-GIK">
+                                <rect key="frame" x="0.0" y="-568" width="320" height="568"/>
+                            </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1BL-2n-N4p">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="511"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="FtV-hP-C4b" kind="embed" identifier="EmbedContainerViewController" id="JBY-H4-bNL"/>
+                                </connections>
+                            </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6vq-Ei-HkM">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jVJ-pc-bia">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flights" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFr-6P-etP">
+                                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="0.4431372549" green="0.58823529409999997" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                    <rect key="frame" x="0.0" y="35" width="64" height="21"/>
+                                                </variation>
+                                            </label>
+                                            <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42Y-yK-4WC" customClass="FlatButton">
+                                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="-14" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" image="flightsOff"/>
+                                                <state key="selected" image="flightsOn"/>
+                                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="64" height="58"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="bottomBarButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G0U-uh-V1R"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <variation key="default">
+                                            <mask key="subviews">
+                                                <exclude reference="JFr-6P-etP"/>
+                                                <exclude reference="42Y-yK-4WC"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="64" height="58"/>
+                                            <mask key="subviews">
+                                                <include reference="JFr-6P-etP"/>
+                                                <include reference="42Y-yK-4WC"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fys-5i-kvQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trips" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkD-at-l6G">
+                                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="0.4431372549" green="0.58823529409999997" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                    <rect key="frame" x="0.0" y="35" width="64" height="21"/>
+                                                </variation>
+                                            </label>
+                                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sfh-8u-xe8">
+                                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="-14" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" image="tripsOff"/>
+                                                <state key="selected" image="tripsOn"/>
+                                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="64" height="58"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="bottomBarButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Go3-8a-1fm"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <variation key="default">
+                                            <mask key="subviews">
+                                                <exclude reference="hkD-at-l6G"/>
+                                                <exclude reference="Sfh-8u-xe8"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="64" y="0.0" width="64" height="58"/>
+                                            <mask key="subviews">
+                                                <include reference="hkD-at-l6G"/>
+                                                <include reference="Sfh-8u-xe8"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BTn-Zi-NGx">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maps" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wmk-bd-OsN">
+                                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="0.4431372549" green="0.58823529409999997" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                    <rect key="frame" x="0.0" y="35" width="64" height="21"/>
+                                                </variation>
+                                            </label>
+                                            <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjX-Y1-eVr">
+                                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="-14" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" image="mapsOff"/>
+                                                <state key="selected" image="mapsOn"/>
+                                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="64" height="58"/>
+                                                </variation>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <variation key="default">
+                                            <mask key="subviews">
+                                                <exclude reference="Wmk-bd-OsN"/>
+                                                <exclude reference="DjX-Y1-eVr"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="128" y="0.0" width="64" height="58"/>
+                                            <mask key="subviews">
+                                                <include reference="Wmk-bd-OsN"/>
+                                                <include reference="DjX-Y1-eVr"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZUs-30-tLG">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shopping" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YvP-Dc-G6y">
+                                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="0.4431372549" green="0.58823529409999997" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                    <rect key="frame" x="0.0" y="35" width="64" height="21"/>
+                                                </variation>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zef-5Y-EQp">
+                                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="-14" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" image="shoppingOff"/>
+                                                <state key="selected" image="shoppingOn"/>
+                                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="64" height="58"/>
+                                                </variation>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <variation key="default">
+                                            <mask key="subviews">
+                                                <exclude reference="YvP-Dc-G6y"/>
+                                                <exclude reference="Zef-5Y-EQp"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="192" y="0.0" width="64" height="58"/>
+                                            <mask key="subviews">
+                                                <include reference="YvP-Dc-G6y"/>
+                                                <include reference="Zef-5Y-EQp"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wx7-2v-IaW">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5e-Sc-WyV">
+                                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="0.4431372549" green="0.58823529409999997" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                    <rect key="frame" x="0.0" y="35" width="64" height="21"/>
+                                                </variation>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyY-gz-sZz">
+                                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="-14" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" image="settingsOff"/>
+                                                <state key="selected" image="settingsOn"/>
+                                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="64" height="58"/>
+                                                </variation>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <variation key="default">
+                                            <mask key="subviews">
+                                                <exclude reference="g5e-Sc-WyV"/>
+                                                <exclude reference="zyY-gz-sZz"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="256" y="0.0" width="64" height="58"/>
+                                            <mask key="subviews">
+                                                <include reference="g5e-Sc-WyV"/>
+                                                <include reference="zyY-gz-sZz"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="jVJ-pc-bia"/>
+                                        <exclude reference="Fys-5i-kvQ"/>
+                                        <exclude reference="BTn-Zi-NGx"/>
+                                        <exclude reference="ZUs-30-tLG"/>
+                                        <exclude reference="Wx7-2v-IaW"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="510" width="320" height="58"/>
+                                    <mask key="subviews">
+                                        <include reference="jVJ-pc-bia"/>
+                                        <include reference="Fys-5i-kvQ"/>
+                                        <include reference="BTn-Zi-NGx"/>
+                                        <include reference="ZUs-30-tLG"/>
+                                        <include reference="Wx7-2v-IaW"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="bP7-Bq-GIK"/>
+                                <exclude reference="1BL-2n-N4p"/>
+                                <exclude reference="6vq-Ei-HkM"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <exclude reference="bP7-Bq-GIK"/>
+                                <include reference="1BL-2n-N4p"/>
+                                <include reference="6vq-Ei-HkM"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="444" y="324"/>
+        </scene>
+        <!--Container View Controller-->
+        <scene sceneID="zaG-HL-GM9">
+            <objects>
+                <viewController id="FtV-hP-C4b" customClass="ContainerViewController" customModule="WiseFly" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hol-l4-h1i"/>
+                        <viewControllerLayoutGuide type="bottom" id="ucl-CC-bAI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CWd-ov-AlN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="511"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="511"/>
+                    <connections>
+                        <segue destination="6sx-za-hll" kind="custom" identifier="ShowFlightsSegue" customClass="CustomSegueClass" customModule="WiseFly" customModuleProvider="target" id="Keo-MW-aYR"/>
+                        <segue destination="Dsw-eT-NA2" kind="custom" identifier="ShowTripsSegue" customClass="CustomSegueClass" customModule="WiseFly" customModuleProvider="target" id="bDO-pO-2Xf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CaK-Qz-zRS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="444" y="817.875"/>
+        </scene>
+        <!--Flights View Controller-->
+        <scene sceneID="Um1-xC-4vO">
+            <objects>
+                <viewController id="6sx-za-hll" customClass="FlightsViewController" customModule="WiseFly" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ahu-IT-P1L"/>
+                        <viewControllerLayoutGuide type="bottom" id="ucH-i8-LYk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gqo-mg-N2i">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="511"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="2-main.png" translatesAutoresizingMaskIntoConstraints="NO" id="30a-Lk-hGd">
+                                <rect key="frame" x="0.0" y="-568" width="320" height="568"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FXC-Pf-hDt">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BlA-35-U4O">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAy-cE-KMu">
+                                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                                <state key="normal" image="locationOff"/>
+                                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                    <rect key="frame" x="72" y="13" width="32" height="32"/>
+                                                </variation>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HnW-Te-6m6" customClass="FBShimmeringView">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="JiW-i3-36h">
+                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                            <rect key="frame" x="0.0" y="0.0" width="60" height="32"/>
+                                                        </variation>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <variation key="default">
+                                                    <mask key="subviews">
+                                                        <exclude reference="JiW-i3-36h"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                    <rect key="frame" x="130" y="14" width="60" height="32"/>
+                                                    <mask key="subviews">
+                                                        <include reference="JiW-i3-36h"/>
+                                                    </mask>
+                                                </variation>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAa-bp-J70">
+                                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                                <state key="normal" image="manualOff"/>
+                                                <state key="selected" image="manualOn"/>
+                                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                    <rect key="frame" x="217" y="13" width="32" height="32"/>
+                                                </variation>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <variation key="default">
+                                            <mask key="subviews">
+                                                <exclude reference="iAy-cE-KMu"/>
+                                                <exclude reference="HnW-Te-6m6"/>
+                                                <exclude reference="aAa-bp-J70"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="0.0" y="136" width="320" height="60"/>
+                                            <mask key="subviews">
+                                                <include reference="iAy-cE-KMu"/>
+                                                <include reference="HnW-Te-6m6"/>
+                                                <include reference="aAa-bp-J70"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KyO-7g-lxp">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
+                                        </variation>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="BlA-35-U4O"/>
+                                        <exclude reference="KyO-7g-lxp"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="BlA-35-U4O"/>
+                                        <include reference="KyO-7g-lxp"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nXj-jX-i9f">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="121"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="vlB-Je-4fT" kind="embed" id="Dem-sg-KnS"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UrU-x6-wKP">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="85" width="320" height="93"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="ppG-d2-uVY" kind="embed" id="S2w-9e-ZPA"/>
+                                </connections>
+                            </containerView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="1" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pMx-Uu-rE2">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FlightScheduleTableCell" rowHeight="90" id="9aw-vZ-Acr" customClass="FlightScheduleTableCell" customModule="WiseFly" customModuleProvider="target">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9aw-vZ-Acr" id="0C7-SI-26K">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jKK-zB-wt5">
+                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="38" y="16" width="36" height="56"/>
+                                                    </variation>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYp-dY-ba4">
+                                                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="82" y="12" width="67" height="14"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUf-mD-pao">
+                                                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="152" y="12" width="42" height="14"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6L-Dn-LhR">
+                                                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="82" y="28" width="80" height="34"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpg-bu-yzG">
+                                                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="82" y="63" width="47" height="14"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gF6-UF-bnC">
+                                                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="127" y="62.5" width="15" height="14"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJH-hR-hLa">
+                                                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="145" y="62.5" width="49" height="14"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vE2-Gf-Coa">
+                                                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="228" y="36.5" width="49" height="24"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4X4-tr-X4h">
+                                                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="228" y="62.5" width="49" height="14"/>
+                                                    </variation>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orange" translatesAutoresizingMaskIntoConstraints="NO" id="Dpk-ko-Oz6">
+                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="258" y="12" width="20" height="20"/>
+                                                    </variation>
+                                                </imageView>
+                                            </subviews>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="jKK-zB-wt5"/>
+                                                    <exclude reference="GYp-dY-ba4"/>
+                                                    <exclude reference="QUf-mD-pao"/>
+                                                    <exclude reference="G6L-Dn-LhR"/>
+                                                    <exclude reference="kpg-bu-yzG"/>
+                                                    <exclude reference="gF6-UF-bnC"/>
+                                                    <exclude reference="sJH-hR-hLa"/>
+                                                    <exclude reference="vE2-Gf-Coa"/>
+                                                    <exclude reference="4X4-tr-X4h"/>
+                                                    <exclude reference="Dpk-ko-Oz6"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="jKK-zB-wt5"/>
+                                                    <include reference="GYp-dY-ba4"/>
+                                                    <include reference="QUf-mD-pao"/>
+                                                    <include reference="G6L-Dn-LhR"/>
+                                                    <include reference="kpg-bu-yzG"/>
+                                                    <include reference="gF6-UF-bnC"/>
+                                                    <include reference="sJH-hR-hLa"/>
+                                                    <include reference="vE2-Gf-Coa"/>
+                                                    <include reference="4X4-tr-X4h"/>
+                                                    <include reference="Dpk-ko-Oz6"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="airportCodeLabel" destination="G6L-Dn-LhR" id="pT5-gG-WZ8"/>
+                                            <outlet property="flightCodeLabel" destination="QUf-mD-pao" id="XH9-2T-egV"/>
+                                            <outlet property="flightLogoImageView" destination="jKK-zB-wt5" id="ixK-Kk-rJr"/>
+                                            <outlet property="flightNameLabel" destination="GYp-dY-ba4" id="4ZD-AH-1l0"/>
+                                            <outlet property="flyingFromLabel" destination="kpg-bu-yzG" id="HL3-Hr-9om"/>
+                                            <outlet property="flyingToLabel" destination="sJH-hR-hLa" id="PGO-LV-91j"/>
+                                            <outlet property="statusImageView" destination="Dpk-ko-Oz6" id="9Ef-7c-HRW"/>
+                                            <outlet property="timeLabel" destination="vE2-Gf-Coa" id="Jl7-f1-8Xk"/>
+                                            <outlet property="timesDayLabel" destination="4X4-tr-X4h" id="YiF-qg-DGF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="183" width="320" height="334"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="6sx-za-hll" id="9nN-RA-I8w"/>
+                                    <outlet property="delegate" destination="6sx-za-hll" id="gXy-Fx-sgO"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="30a-Lk-hGd"/>
+                                <exclude reference="FXC-Pf-hDt"/>
+                                <exclude reference="nXj-jX-i9f"/>
+                                <exclude reference="UrU-x6-wKP"/>
+                                <exclude reference="pMx-Uu-rE2"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <exclude reference="30a-Lk-hGd"/>
+                                <exclude reference="FXC-Pf-hDt"/>
+                                <include reference="nXj-jX-i9f"/>
+                                <include reference="UrU-x6-wKP"/>
+                                <include reference="pMx-Uu-rE2"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="511"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TaU-ZV-hHg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85.5" y="1283.625"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rvg-D8-OIe">
+            <objects>
+                <viewController id="Dsw-eT-NA2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M6E-UP-0qB"/>
+                        <viewControllerLayoutGuide type="bottom" id="uvQ-os-nrm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QqO-fK-1Ag">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="511"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="16 trips empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="Cmw-ri-fxM">
+                                <rect key="frame" x="0.0" y="-568" width="320" height="568"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Cmw-ri-fxM"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Cmw-ri-fxM"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="511"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JsI-uM-OH1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="765" y="1283.625"/>
+        </scene>
+        <!--Top Flight Detail Container Controller-->
+        <scene sceneID="iWR-ot-Ft2">
+            <objects>
+                <viewController id="vlB-Je-4fT" customClass="TopFlightDetailContainerController" customModule="WiseFly" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <outlet property="loadingImageView" destination="tUN-sc-yAN" id="SYV-bh-0Zs"/>
+                        <outlet property="shimmeringView" destination="l5j-VF-rB4" id="X4A-sn-3Le"/>
+                        <outlet property="view" destination="2IJ-o7-BAD" id="3rK-6C-yhu"/>
+                    </connections>
+                </viewController>
+                <view contentMode="scaleToFill" id="2IJ-o7-BAD">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cF8-bY-lcS">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
+                            </variation>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LTv-Jc-YBV">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMF-OJ-1FW" customClass="FlatButton">
+                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                    <state key="normal" image="locationOff"/>
+                                    <state key="selected" image="locationOn"/>
+                                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                        <rect key="frame" x="72" y="13" width="32" height="32"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="locationButtonTapped:" destination="vlB-Je-4fT" eventType="touchUpInside" id="0Qn-jH-Elx"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l5j-VF-rB4" customClass="FBShimmeringView">
+                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="tUN-sc-yAN">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="32"/>
+                                            </variation>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <variation key="default">
+                                        <mask key="subviews">
+                                            <exclude reference="tUN-sc-yAN"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                        <rect key="frame" x="130" y="14" width="60" height="32"/>
+                                        <mask key="subviews">
+                                            <include reference="tUN-sc-yAN"/>
+                                        </mask>
+                                    </variation>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7c0-LA-Bis" customClass="FlatButton">
+                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                    <state key="normal" image="manualOff"/>
+                                    <state key="selected" image="manualOn"/>
+                                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                        <rect key="frame" x="217" y="13" width="32" height="32"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="editButtonTapped:" destination="vlB-Je-4fT" eventType="touchUpInside" id="yUK-N0-F07"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <variation key="default">
+                                <mask key="subviews">
+                                    <exclude reference="PMF-OJ-1FW"/>
+                                    <exclude reference="l5j-VF-rB4"/>
+                                    <exclude reference="7c0-LA-Bis"/>
+                                </mask>
+                            </variation>
+                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                <rect key="frame" x="0.0" y="10" width="320" height="60"/>
+                                <mask key="subviews">
+                                    <include reference="PMF-OJ-1FW"/>
+                                    <include reference="l5j-VF-rB4"/>
+                                    <include reference="7c0-LA-Bis"/>
+                                </mask>
+                            </variation>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.066666666666666666" green="0.21568627450980393" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="cF8-bY-lcS"/>
+                            <exclude reference="LTv-Jc-YBV"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="subviews">
+                            <include reference="cF8-bY-lcS"/>
+                            <include reference="LTv-Jc-YBV"/>
+                        </mask>
+                    </variation>
+                </view>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1tq-uY-eUF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118.5" y="1672.125"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JMX-13-JCi">
+            <objects>
+                <viewController id="ppG-d2-uVY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bWS-Kz-k81">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2f-Xf-tgx">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="titleEdgeInsets" minX="18" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="DEPARTURES" image="departureOff">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="departureOn"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="10" y="64" width="120" height="22"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdK-vc-vhc">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="7" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="ARRIVALS" image="arrivalOff">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="148" y="64" width="102" height="22"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4pT-iw-Rp7">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="dateOff"/>
+                                <state key="selected" image="dateOn"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="267" y="64" width="47" height="22"/>
+                                </variation>
+                            </button>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="YHO-Ch-bPn">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="32" y="8" width="257" height="44"/>
+                                </variation>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="U2f-Xf-tgx"/>
+                                <exclude reference="hdK-vc-vhc"/>
+                                <exclude reference="4pT-iw-Rp7"/>
+                                <exclude reference="YHO-Ch-bPn"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="U2f-Xf-tgx"/>
+                                <include reference="hdK-vc-vhc"/>
+                                <include reference="4pT-iw-Rp7"/>
+                                <include reference="YHO-Ch-bPn"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ihb-Oh-hAi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-477" y="1184.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1-loading.png" width="320" height="568"/>
+        <image name="16 trips empty.png" width="320" height="568"/>
+        <image name="2-main.png" width="320" height="568"/>
+        <image name="arrivalOff" width="19" height="17"/>
+        <image name="dateOff" width="18" height="20"/>
+        <image name="dateOn" width="18" height="20"/>
+        <image name="departureOff" width="19" height="15"/>
+        <image name="departureOn" width="19" height="15"/>
+        <image name="flightsOff" width="20" height="19"/>
+        <image name="flightsOn" width="20" height="19"/>
+        <image name="locationOff" width="32" height="32"/>
+        <image name="locationOn" width="32" height="32"/>
+        <image name="logo" width="60" height="32"/>
+        <image name="manualOff" width="32" height="32"/>
+        <image name="manualOn" width="32" height="32"/>
+        <image name="mapsOff" width="18" height="18"/>
+        <image name="mapsOn" width="18" height="18"/>
+        <image name="orange" width="16" height="16"/>
+        <image name="settingsOff" width="20" height="20"/>
+        <image name="settingsOn" width="20" height="20"/>
+        <image name="shoppingOff" width="22" height="20"/>
+        <image name="shoppingOn" width="22" height="20"/>
+        <image name="tripsOff" width="20" height="19"/>
+        <image name="tripsOn" width="20" height="19"/>
+    </resources>
+</document>

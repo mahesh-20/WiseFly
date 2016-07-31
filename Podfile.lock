@@ -1,0 +1,18 @@
+PODS:
+  - pop (1.0.9)
+  - Shimmer (1.0.2)
+  - Tweaks (2.0.0)
+
+DEPENDENCIES:
+  - pop
+  - Shimmer
+  - Tweaks
+
+SPEC CHECKSUMS:
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
+  Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
+  Tweaks: 524fa47636cce3bf3a4d9156e980f10ae9480e81
+
+PODFILE CHECKSUM: 893de08fd4fa1f2cd66730061a7a2c4d12a052e1
+
+COCOAPODS: 1.0.1

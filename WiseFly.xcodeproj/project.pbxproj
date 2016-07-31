@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B56D2B2150BECB980485FEA /* libPods-WiseFly.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9652694E868A86EB350E6FE3 /* libPods-WiseFly.a */; };
+		F41C7D0A1D4DDADD00BEAD3F /* TopFlightDetailContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41C7D091D4DDADD00BEAD3F /* TopFlightDetailContainerController.swift */; };
+		F41C7D0D1D4DFB9400BEAD3F /* FlightScheduleList.plist in Resources */ = {isa = PBXBuildFile; fileRef = F41C7D0C1D4DFB9400BEAD3F /* FlightScheduleList.plist */; };
+		F41C7D101D4E25F600BEAD3F /* FlightScheduleTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41C7D0F1D4E25F600BEAD3F /* FlightScheduleTableCell.swift */; };
+		F41C7D141D4E3D1000BEAD3F /* FlatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F41C7D131D4E3D1000BEAD3F /* FlatButton.m */; };
+		F41C7D171D4E837200BEAD3F /* Tweaks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41C7D161D4E837200BEAD3F /* Tweaks.swift */; };
+		F4741E001D49EA0400DC0344 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4741DFF1D49EA0400DC0344 /* HomeViewController.swift */; };
+		F4741E031D49EAB200DC0344 /* CustomSegueClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4741E021D49EAB200DC0344 /* CustomSegueClass.swift */; };
+		F4741E051D49EB7800DC0344 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4741E041D49EB7800DC0344 /* Constants.swift */; };
+		F4741E081D49FB2E00DC0344 /* FlightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4741E071D49FB2E00DC0344 /* FlightsViewController.swift */; };
+		F4741E161D4A1D2A00DC0344 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F4741E151D4A1D2A00DC0344 /* Podfile */; };
+		F4C9CF771D44B1630059DCA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C9CF751D44B1630059DCA0 /* Main.storyboard */; };
+		F4C9CF791D44B1630059DCA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C9CF781D44B1630059DCA0 /* Assets.xcassets */; };
+		F4C9CF7C1D44B1630059DCA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C9CF7A1D44B1630059DCA0 /* LaunchScreen.storyboard */; };
+		F4C9CF861D44B17F0059DCA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9CF841D44B17F0059DCA0 /* AppDelegate.swift */; };
+		F4C9CF871D44B17F0059DCA0 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9CF851D44B17F0059DCA0 /* ContainerViewController.swift */; };
+		F4C9CFA51D44B1D30059DCA0 /* 1-loading.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C9CF8B1D44B1D30059DCA0 /* 1-loading.png */; };
+		F4C9CFA61D44B1D30059DCA0 /* 10 sliding.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C9CF8C1D44B1D30059DCA0 /* 10 sliding.png */; };
+		F4C9CFA71D44B1D30059DCA0 /* 11 release to pin.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C9CF8D1D44B1D30059DCA0 /* 11 release to pin.png */; };
+		F4C9CFA81D44B1D30059DCA0 /* 12 pinning.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C9CF8E1D44B1D30059DCA0 /* 12 pinning.png */; };
+		F4C9CFA91D44B1D30059DCA0 /* 13 notification animates.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C9CF8F1D44B1D30059DCA0 /* 13 notification animates.png */; };
+		F4C9CFAA1D44B1D30059DCA0 /* 14 notification animating.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C9CF901D44B1D30059DCA0 /* 14 notification animating.png */; };
+		F4C9CFAB1D44B1D30059DCA0 /* 15 pinned badge.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C9CF911D44B1D30059DCA0 /* 15 pinned badge.png */; };
+		F4C9CFAC1D44B1D30059DCA0 /* 16 trips empty.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C9CF921D44B1D30059DCA0 /* 16 trips empty.png */; };
+		F4C9CFAD1D44B1D30059DCA0 /* 17 trips.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C9CF931D44B1D30059DCA0 /* 17 trips.png */; };
+		F4C9CFAE1D44B1D30059DCA0 /* 18 trips scrolling.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C9CF941D44B1D30059DCA0 /* 18 trips scrolling.png */; };
+		F4C9CFAF1D44B1D30059DCA0 /* 19 trips old.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C9CF951D44B1D30059DCA0 /* 19 trips old.png */; };
+		F4C9CFB01D44B1D30059DCA0 /* 2-main.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C9CF961D44B1D30059DCA0 /* 2-main.png */; };
+		F4C9CFB11D44B1D30059DCA0 /* 20 trips old scrolling.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C9CF971D44B1D30059DCA0 /* 20 trips old scrolling.png */; };
+		F4C9CFB21D44B1D30059DCA0 /* 21 trips old list.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C9CF981D44B1D30059DCA0 /* 21 trips old list.png */; };
+		F4C9CFB31D44B1D30059DCA0 /* 22 trip detail.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C9CF991D44B1D30059DCA0 /* 22 trip detail.png */; };
+		F4C9CFB41D44B1D30059DCA0 /* 23 trip detail 2.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C9CF9A1D44B1D30059DCA0 /* 23 trip detail 2.png */; };
+		F4C9CFB51D44B1D30059DCA0 /* 24 trip detail 3.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C9CF9B1D44B1D30059DCA0 /* 24 trip detail 3.png */; };
+		F4C9CFB61D44B1D30059DCA0 /* 25 trip detail 4.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C9CF9C1D44B1D30059DCA0 /* 25 trip detail 4.png */; };
+		F4C9CFB71D44B1D30059DCA0 /* 3 main scroll.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C9CF9D1D44B1D30059DCA0 /* 3 main scroll.png */; };
+		F4C9CFB81D44B1D30059DCA0 /* 4 calendar filter.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C9CF9E1D44B1D30059DCA0 /* 4 calendar filter.png */; };
+		F4C9CFB91D44B1D30059DCA0 /* 5 airport tapped.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C9CF9F1D44B1D30059DCA0 /* 5 airport tapped.png */; };
+		F4C9CFBA1D44B1D30059DCA0 /* 6 Hyderabad.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C9CFA01D44B1D30059DCA0 /* 6 Hyderabad.png */; };
+		F4C9CFBB1D44B1D30059DCA0 /* 7 Delhi.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C9CFA11D44B1D30059DCA0 /* 7 Delhi.png */; };
+		F4C9CFBC1D44B1D30059DCA0 /* 8 flight detail.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C9CFA21D44B1D30059DCA0 /* 8 flight detail.png */; };
+		F4C9CFBD1D44B1D30059DCA0 /* 9 slide flight.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C9CFA31D44B1D30059DCA0 /* 9 slide flight.png */; };
+		F4C9CFBE1D44B1D30059DCA0 /* Requirements.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F4C9CFA41D44B1D30059DCA0 /* Requirements.rtf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2A1F550885DF79DAE4D39DEB /* Pods-WiseFly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiseFly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WiseFly/Pods-WiseFly.debug.xcconfig"; sourceTree = "<group>"; };
+		41C56902F9814B25876B3E6C /* Pods-WiseFly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiseFly.release.xcconfig"; path = "Pods/Target Support Files/Pods-WiseFly/Pods-WiseFly.release.xcconfig"; sourceTree = "<group>"; };
+		9652694E868A86EB350E6FE3 /* libPods-WiseFly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WiseFly.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F41C7D091D4DDADD00BEAD3F /* TopFlightDetailContainerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopFlightDetailContainerController.swift; sourceTree = "<group>"; };
+		F41C7D0C1D4DFB9400BEAD3F /* FlightScheduleList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FlightScheduleList.plist; sourceTree = "<group>"; };
+		F41C7D0F1D4E25F600BEAD3F /* FlightScheduleTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightScheduleTableCell.swift; sourceTree = "<group>"; };
+		F41C7D121D4E3D1000BEAD3F /* FlatButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlatButton.h; sourceTree = "<group>"; };
+		F41C7D131D4E3D1000BEAD3F /* FlatButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlatButton.m; sourceTree = "<group>"; };
+		F41C7D161D4E837200BEAD3F /* Tweaks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweaks.swift; sourceTree = "<group>"; };
+		F4741DFF1D49EA0400DC0344 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F4741E021D49EAB200DC0344 /* CustomSegueClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegueClass.swift; sourceTree = "<group>"; };
+		F4741E041D49EB7800DC0344 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F4741E071D49FB2E00DC0344 /* FlightsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightsViewController.swift; sourceTree = "<group>"; };
+		F4741E141D4A185000DC0344 /* WiseFly-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WiseFly-Bridging-Header.h"; sourceTree = "<group>"; };
+		F4741E151D4A1D2A00DC0344 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		F4C9CF6E1D44B1630059DCA0 /* WiseFly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiseFly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4C9CF761D44B1630059DCA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4C9CF781D44B1630059DCA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4C9CF7B1D44B1630059DCA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F4C9CF7D1D44B1630059DCA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4C9CF841D44B17F0059DCA0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4C9CF851D44B17F0059DCA0 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		F4C9CF8B1D44B1D30059DCA0 /* 1-loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1-loading.png"; sourceTree = "<group>"; };
+		F4C9CF8C1D44B1D30059DCA0 /* 10 sliding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "10 sliding.png"; sourceTree = "<group>"; };
+		F4C9CF8D1D44B1D30059DCA0 /* 11 release to pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "11 release to pin.png"; sourceTree = "<group>"; };
+		F4C9CF8E1D44B1D30059DCA0 /* 12 pinning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "12 pinning.png"; sourceTree = "<group>"; };
+		F4C9CF8F1D44B1D30059DCA0 /* 13 notification animates.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "13 notification animates.png"; sourceTree = "<group>"; };
+		F4C9CF901D44B1D30059DCA0 /* 14 notification animating.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "14 notification animating.png"; sourceTree = "<group>"; };
+		F4C9CF911D44B1D30059DCA0 /* 15 pinned badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "15 pinned badge.png"; sourceTree = "<group>"; };
+		F4C9CF921D44B1D30059DCA0 /* 16 trips empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "16 trips empty.png"; sourceTree = "<group>"; };
+		F4C9CF931D44B1D30059DCA0 /* 17 trips.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "17 trips.png"; sourceTree = "<group>"; };
+		F4C9CF941D44B1D30059DCA0 /* 18 trips scrolling.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "18 trips scrolling.png"; sourceTree = "<group>"; };
+		F4C9CF951D44B1D30059DCA0 /* 19 trips old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "19 trips old.png"; sourceTree = "<group>"; };
+		F4C9CF961D44B1D30059DCA0 /* 2-main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2-main.png"; sourceTree = "<group>"; };
+		F4C9CF971D44B1D30059DCA0 /* 20 trips old scrolling.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "20 trips old scrolling.png"; sourceTree = "<group>"; };
+		F4C9CF981D44B1D30059DCA0 /* 21 trips old list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "21 trips old list.png"; sourceTree = "<group>"; };
+		F4C9CF991D44B1D30059DCA0 /* 22 trip detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "22 trip detail.png"; sourceTree = "<group>"; };
+		F4C9CF9A1D44B1D30059DCA0 /* 23 trip detail 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "23 trip detail 2.png"; sourceTree = "<group>"; };
+		F4C9CF9B1D44B1D30059DCA0 /* 24 trip detail 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "24 trip detail 3.png"; sourceTree = "<group>"; };
+		F4C9CF9C1D44B1D30059DCA0 /* 25 trip detail 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "25 trip detail 4.png"; sourceTree = "<group>"; };
+		F4C9CF9D1D44B1D30059DCA0 /* 3 main scroll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3 main scroll.png"; sourceTree = "<group>"; };
+		F4C9CF9E1D44B1D30059DCA0 /* 4 calendar filter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4 calendar filter.png"; sourceTree = "<group>"; };
+		F4C9CF9F1D44B1D30059DCA0 /* 5 airport tapped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5 airport tapped.png"; sourceTree = "<group>"; };
+		F4C9CFA01D44B1D30059DCA0 /* 6 Hyderabad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6 Hyderabad.png"; sourceTree = "<group>"; };
+		F4C9CFA11D44B1D30059DCA0 /* 7 Delhi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "7 Delhi.png"; sourceTree = "<group>"; };
+		F4C9CFA21D44B1D30059DCA0 /* 8 flight detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "8 flight detail.png"; sourceTree = "<group>"; };
+		F4C9CFA31D44B1D30059DCA0 /* 9 slide flight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "9 slide flight.png"; sourceTree = "<group>"; };
+		F4C9CFA41D44B1D30059DCA0 /* Requirements.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Requirements.rtf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4C9CF6B1D44B1630059DCA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B56D2B2150BECB980485FEA /* libPods-WiseFly.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D011A0C4DD31EAFC05EA7D22 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A1F550885DF79DAE4D39DEB /* Pods-WiseFly.debug.xcconfig */,
+				41C56902F9814B25876B3E6C /* Pods-WiseFly.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D8697CE689DDF5FDCE2D115F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9652694E868A86EB350E6FE3 /* libPods-WiseFly.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F41C7D0B1D4DF27F00BEAD3F /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				F41C7D0C1D4DFB9400BEAD3F /* FlightScheduleList.plist */,
+			);
+			name = Plist;
+			sourceTree = "<group>";
+		};
+		F41C7D0E1D4E257000BEAD3F /* Table Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F41C7D0F1D4E25F600BEAD3F /* FlightScheduleTableCell.swift */,
+			);
+			name = "Table Cell";
+			sourceTree = "<group>";
+		};
+		F41C7D111D4E3D0500BEAD3F /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				F41C7D121D4E3D1000BEAD3F /* FlatButton.h */,
+				F41C7D131D4E3D1000BEAD3F /* FlatButton.m */,
+			);
+			name = "Custom Views";
+			sourceTree = "<group>";
+		};
+		F41C7D151D4E836600BEAD3F /* Custom Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F41C7D161D4E837200BEAD3F /* Tweaks.swift */,
+			);
+			name = "Custom Classes";
+			sourceTree = "<group>";
+		};
+		F4741E011D49EA8E00DC0344 /* Segue */ = {
+			isa = PBXGroup;
+			children = (
+				F4741E021D49EAB200DC0344 /* CustomSegueClass.swift */,
+			);
+			name = Segue;
+			sourceTree = "<group>";
+		};
+		F4741E061D49FAFB00DC0344 /* Flights */ = {
+			isa = PBXGroup;
+			children = (
+				F41C7D0E1D4E257000BEAD3F /* Table Cell */,
+				F4741E071D49FB2E00DC0344 /* FlightsViewController.swift */,
+				F41C7D091D4DDADD00BEAD3F /* TopFlightDetailContainerController.swift */,
+			);
+			name = Flights;
+			sourceTree = "<group>";
+		};
+		F4741E091D49FB6C00DC0344 /* Trips */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Trips;
+			sourceTree = "<group>";
+		};
+		F4741E0A1D49FECE00DC0344 /* Custom Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F4741E041D49EB7800DC0344 /* Constants.swift */,
+			);
+			name = "Custom Classes";
+			sourceTree = "<group>";
+		};
+		F4C9CF651D44B1630059DCA0 = {
+			isa = PBXGroup;
+			children = (
+				F4741E151D4A1D2A00DC0344 /* Podfile */,
+				F4C9CF701D44B1630059DCA0 /* WiseFly */,
+				F4C9CF6F1D44B1630059DCA0 /* Products */,
+				D011A0C4DD31EAFC05EA7D22 /* Pods */,
+				D8697CE689DDF5FDCE2D115F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F4C9CF6F1D44B1630059DCA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4C9CF6E1D44B1630059DCA0 /* WiseFly.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4C9CF701D44B1630059DCA0 /* WiseFly */ = {
+			isa = PBXGroup;
+			children = (
+				F4C9CF831D44B17F0059DCA0 /* Classes */,
+				F4C9CF751D44B1630059DCA0 /* Main.storyboard */,
+				F4C9CF781D44B1630059DCA0 /* Assets.xcassets */,
+				F4C9CF7A1D44B1630059DCA0 /* LaunchScreen.storyboard */,
+				F4C9CF7D1D44B1630059DCA0 /* Info.plist */,
+				F4C9CF881D44B1B10059DCA0 /* Resources */,
+			);
+			path = WiseFly;
+			sourceTree = "<group>";
+		};
+		F4C9CF831D44B17F0059DCA0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F41C7D151D4E836600BEAD3F /* Custom Classes */,
+				F41C7D111D4E3D0500BEAD3F /* Custom Views */,
+				F41C7D0B1D4DF27F00BEAD3F /* Plist */,
+				F4741E0A1D49FECE00DC0344 /* Custom Classes */,
+				F4741E091D49FB6C00DC0344 /* Trips */,
+				F4741E061D49FAFB00DC0344 /* Flights */,
+				F4741E011D49EA8E00DC0344 /* Segue */,
+				F4C9CF841D44B17F0059DCA0 /* AppDelegate.swift */,
+				F4C9CF851D44B17F0059DCA0 /* ContainerViewController.swift */,
+				F4741DFF1D49EA0400DC0344 /* HomeViewController.swift */,
+				F4741E141D4A185000DC0344 /* WiseFly-Bridging-Header.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F4C9CF881D44B1B10059DCA0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F4C9CF891D44B1D30059DCA0 /* images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F4C9CF891D44B1D30059DCA0 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				F4C9CF8A1D44B1D30059DCA0 /* screens */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		F4C9CF8A1D44B1D30059DCA0 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				F4C9CF8B1D44B1D30059DCA0 /* 1-loading.png */,
+				F4C9CF8C1D44B1D30059DCA0 /* 10 sliding.png */,
+				F4C9CF8D1D44B1D30059DCA0 /* 11 release to pin.png */,
+				F4C9CF8E1D44B1D30059DCA0 /* 12 pinning.png */,
+				F4C9CF8F1D44B1D30059DCA0 /* 13 notification animates.png */,
+				F4C9CF901D44B1D30059DCA0 /* 14 notification animating.png */,
+				F4C9CF911D44B1D30059DCA0 /* 15 pinned badge.png */,
+				F4C9CF921D44B1D30059DCA0 /* 16 trips empty.png */,
+				F4C9CF931D44B1D30059DCA0 /* 17 trips.png */,
+				F4C9CF941D44B1D30059DCA0 /* 18 trips scrolling.png */,
+				F4C9CF951D44B1D30059DCA0 /* 19 trips old.png */,
+				F4C9CF961D44B1D30059DCA0 /* 2-main.png */,
+				F4C9CF971D44B1D30059DCA0 /* 20 trips old scrolling.png */,
+				F4C9CF981D44B1D30059DCA0 /* 21 trips old list.png */,
+				F4C9CF991D44B1D30059DCA0 /* 22 trip detail.png */,
+				F4C9CF9A1D44B1D30059DCA0 /* 23 trip detail 2.png */,
+				F4C9CF9B1D44B1D30059DCA0 /* 24 trip detail 3.png */,
+				F4C9CF9C1D44B1D30059DCA0 /* 25 trip detail 4.png */,
+				F4C9CF9D1D44B1D30059DCA0 /* 3 main scroll.png */,
+				F4C9CF9E1D44B1D30059DCA0 /* 4 calendar filter.png */,
+				F4C9CF9F1D44B1D30059DCA0 /* 5 airport tapped.png */,
+				F4C9CFA01D44B1D30059DCA0 /* 6 Hyderabad.png */,
+				F4C9CFA11D44B1D30059DCA0 /* 7 Delhi.png */,
+				F4C9CFA21D44B1D30059DCA0 /* 8 flight detail.png */,
+				F4C9CFA31D44B1D30059DCA0 /* 9 slide flight.png */,
+				F4C9CFA41D44B1D30059DCA0 /* Requirements.rtf */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4C9CF6D1D44B1630059DCA0 /* WiseFly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4C9CF801D44B1630059DCA0 /* Build configuration list for PBXNativeTarget "WiseFly" */;
+			buildPhases = (
+				7D12B0B8BB05A31C3EA3D349 /* [CP] Check Pods Manifest.lock */,
+				F4C9CF6A1D44B1630059DCA0 /* Sources */,
+				F4C9CF6B1D44B1630059DCA0 /* Frameworks */,
+				F4C9CF6C1D44B1630059DCA0 /* Resources */,
+				FEF6CF804D7ED4947933D682 /* [CP] Embed Pods Frameworks */,
+				81A893A63506C461735E27F9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WiseFly;
+			productName = WiseFly;
+			productReference = F4C9CF6E1D44B1630059DCA0 /* WiseFly.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4C9CF661D44B1630059DCA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Mane, Mahesh Dhanaji (external - Project)";
+				TargetAttributes = {
+					F4C9CF6D1D44B1630059DCA0 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = F4C9CF691D44B1630059DCA0 /* Build configuration list for PBXProject "WiseFly" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4C9CF651D44B1630059DCA0;
+			productRefGroup = F4C9CF6F1D44B1630059DCA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4C9CF6D1D44B1630059DCA0 /* WiseFly */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4C9CF6C1D44B1630059DCA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4741E161D4A1D2A00DC0344 /* Podfile in Resources */,
+				F4C9CFAF1D44B1D30059DCA0 /* 19 trips old.png in Resources */,
+				F4C9CFB21D44B1D30059DCA0 /* 21 trips old list.png in Resources */,
+				F4C9CFAA1D44B1D30059DCA0 /* 14 notification animating.png in Resources */,
+				F4C9CFAC1D44B1D30059DCA0 /* 16 trips empty.png in Resources */,
+				F41C7D0D1D4DFB9400BEAD3F /* FlightScheduleList.plist in Resources */,
+				F4C9CFA81D44B1D30059DCA0 /* 12 pinning.png in Resources */,
+				F4C9CFAE1D44B1D30059DCA0 /* 18 trips scrolling.png in Resources */,
+				F4C9CFB51D44B1D30059DCA0 /* 24 trip detail 3.png in Resources */,
+				F4C9CFB71D44B1D30059DCA0 /* 3 main scroll.png in Resources */,
+				F4C9CFA51D44B1D30059DCA0 /* 1-loading.png in Resources */,
+				F4C9CFA71D44B1D30059DCA0 /* 11 release to pin.png in Resources */,
+				F4C9CFB01D44B1D30059DCA0 /* 2-main.png in Resources */,
+				F4C9CFB91D44B1D30059DCA0 /* 5 airport tapped.png in Resources */,
+				F4C9CFB41D44B1D30059DCA0 /* 23 trip detail 2.png in Resources */,
+				F4C9CFAD1D44B1D30059DCA0 /* 17 trips.png in Resources */,
+				F4C9CFB61D44B1D30059DCA0 /* 25 trip detail 4.png in Resources */,
+				F4C9CF7C1D44B1630059DCA0 /* LaunchScreen.storyboard in Resources */,
+				F4C9CFBC1D44B1D30059DCA0 /* 8 flight detail.png in Resources */,
+				F4C9CFBE1D44B1D30059DCA0 /* Requirements.rtf in Resources */,
+				F4C9CFBD1D44B1D30059DCA0 /* 9 slide flight.png in Resources */,
+				F4C9CFB81D44B1D30059DCA0 /* 4 calendar filter.png in Resources */,
+				F4C9CFAB1D44B1D30059DCA0 /* 15 pinned badge.png in Resources */,
+				F4C9CFA91D44B1D30059DCA0 /* 13 notification animates.png in Resources */,
+				F4C9CFB31D44B1D30059DCA0 /* 22 trip detail.png in Resources */,
+				F4C9CFBA1D44B1D30059DCA0 /* 6 Hyderabad.png in Resources */,
+				F4C9CFBB1D44B1D30059DCA0 /* 7 Delhi.png in Resources */,
+				F4C9CF791D44B1630059DCA0 /* Assets.xcassets in Resources */,
+				F4C9CFB11D44B1D30059DCA0 /* 20 trips old scrolling.png in Resources */,
+				F4C9CFA61D44B1D30059DCA0 /* 10 sliding.png in Resources */,
+				F4C9CF771D44B1630059DCA0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D12B0B8BB05A31C3EA3D349 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		81A893A63506C461735E27F9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WiseFly/Pods-WiseFly-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEF6CF804D7ED4947933D682 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WiseFly/Pods-WiseFly-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4C9CF6A1D44B1630059DCA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F41C7D171D4E837200BEAD3F /* Tweaks.swift in Sources */,
+				F4741E081D49FB2E00DC0344 /* FlightsViewController.swift in Sources */,
+				F4741E051D49EB7800DC0344 /* Constants.swift in Sources */,
+				F41C7D141D4E3D1000BEAD3F /* FlatButton.m in Sources */,
+				F4C9CF861D44B17F0059DCA0 /* AppDelegate.swift in Sources */,
+				F41C7D101D4E25F600BEAD3F /* FlightScheduleTableCell.swift in Sources */,
+				F41C7D0A1D4DDADD00BEAD3F /* TopFlightDetailContainerController.swift in Sources */,
+				F4C9CF871D44B17F0059DCA0 /* ContainerViewController.swift in Sources */,
+				F4741E001D49EA0400DC0344 /* HomeViewController.swift in Sources */,
+				F4741E031D49EAB200DC0344 /* CustomSegueClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F4C9CF751D44B1630059DCA0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4C9CF761D44B1630059DCA0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F4C9CF7A1D44B1630059DCA0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4C9CF7B1D44B1630059DCA0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4C9CF7E1D44B1630059DCA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4C9CF7F1D44B1630059DCA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4C9CF811D44B1630059DCA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A1F550885DF79DAE4D39DEB /* Pods-WiseFly.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WiseFly/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sap.DS4M.AW.Innowations.WiseFly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WiseFly/Classes/WiseFly-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		F4C9CF821D44B1630059DCA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41C56902F9814B25876B3E6C /* Pods-WiseFly.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WiseFly/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sap.DS4M.AW.Innowations.WiseFly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WiseFly/Classes/WiseFly-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4C9CF691D44B1630059DCA0 /* Build configuration list for PBXProject "WiseFly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4C9CF7E1D44B1630059DCA0 /* Debug */,
+				F4C9CF7F1D44B1630059DCA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4C9CF801D44B1630059DCA0 /* Build configuration list for PBXNativeTarget "WiseFly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4C9CF811D44B1630059DCA0 /* Debug */,
+				F4C9CF821D44B1630059DCA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4C9CF661D44B1630059DCA0 /* Project object */;
+}
